@@ -19,6 +19,13 @@ export function acrescimoNotaBB(notaSozinho, notaComAjuda) {
     Retorna:
         float: o acréscimo na nota obtido pelo aluno que ajudou seu colega.
     */
+        const diferenca = (notaComAjuda - notaSozinho)
+        const adicional = diferenca / 4
+        
+        if(notaComAjuda => notaSozinho)
+        return adicional
+        
+
 }
 
 export function maior3(a, b, c) {
@@ -77,7 +84,7 @@ export function anoBissexto(ano) {
     */
     if ((ano % 400 === 0) || ((ano % 4 === 0) && (ano % 100 !== 0)))
     return true 
-    return false
+    return falseif(segundaNota => primeiraNota)
 
 }
 
@@ -128,7 +135,7 @@ export function dataValida(data) {
         d = parseInt(d)
         m = parseInt(m)
         a = parseInt(a)
-        if ((d > 30 ) &&; (m === 2 ||m === 4 || m === 6 || m === 9 || m === 11))
+        if ((d > 30 ) && (m === 2 ||m === 4 || m === 6 || m === 9 || m === 11))
         return false
         else if (d > 31 || m >12 || m === 0 || a === 0)
         return false
@@ -151,6 +158,9 @@ export function delta(a, b, c) {
     Retorna:
         (float): o valor do delta
     */
+   const delta = (b ** 2) - (4 * a * c)
+
+   return delta
        
 }
 
